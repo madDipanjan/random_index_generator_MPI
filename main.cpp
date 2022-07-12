@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
                         if(j/M != myrank && rand_numbers[i] == out_data[j])
                         {
                                 rank_other_exist[i][count] = j/M;       //For each random number on a process, "rank_other_exist" stores rank of other processes where the number has also appeared 
-                                location_other_exist[i][count] = j%M;   //"locatoion_other_exist" stores th eindex location on other processes where the number appears again
+                                location_other_exist[i][count] = j%M;   //"locatoion_other_exist" stores the index location on other processes where the number appears again
                                 count++;
                         }
                 }
